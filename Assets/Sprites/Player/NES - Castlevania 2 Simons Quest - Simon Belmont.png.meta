@@ -1,0 +1,2019 @@
+fileFormatVersion: 2
+guid: 185676c355ea7fe40b6b691c68b5ff2f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Walk1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 2918
+        width: 84
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6d7f8585f03da540800000000000000
+      internalID: 5020722990653865323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk2
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 2918
+        width: 59
+        height: 154
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14cea525840f9cb0800000000000000
+      internalID: -4855156903372733412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk3
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 2918
+        width: 83
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47767e56e9296cfa0800000000000000
+      internalID: -5780771862671300748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crouch
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 2918
+        width: 84
+        height: 119
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961207d0981544910800000000000000
+      internalID: 1820669798442344809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 2703
+        width: 163
+        height: 154
+      alignment: 9
+      pivot: {x: 0.73460716, y: 0.07449618}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92039254caff361e0800000000000000
+      internalID: -2205638277121626071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack2
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 2709
+        width: 159
+        height: 148
+      alignment: 9
+      pivot: {x: 0.7244754, y: 0.008614205}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1225c3a390b262a90800000000000000
+      internalID: -7339131224121912799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack3
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 2709
+        width: 233
+        height: 148
+      alignment: 9
+      pivot: {x: 0.1662802, y: 0.008614205}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57437f8c4f3d45360800000000000000
+      internalID: 7157578756095685749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack4
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 2709
+        width: 274
+        height: 148
+      alignment: 9
+      pivot: {x: 0.14643359, y: 0.008614205}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a282cb83522f9e900800000000000000
+      internalID: 714368257594501162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_8
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 2703
+        width: 164
+        height: 154
+      alignment: 9
+      pivot: {x: 0.72540504, y: 0.057942178}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 062d9c22971734400800000000000000
+      internalID: 307213964679959136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_9
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 2709
+        width: 164
+        height: 148
+      alignment: 9
+      pivot: {x: 0.72540504, y: 0.017226761}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea10146dd4f3fb300800000000000000
+      internalID: 270004106205135278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_10
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 2709
+        width: 314
+        height: 148
+      alignment: 9
+      pivot: {x: 0.13058063, y: 0.008614205}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 840b438807731c570800000000000000
+      internalID: 8485124129403744328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_11
+      rect:
+        serializedVersion: 2
+        x: 2427
+        y: 2688
+        width: 59
+        height: 154
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b467bc5f758e030800000000000000
+      internalID: 3524163421609544548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_12
+      rect:
+        serializedVersion: 2
+        x: 2583
+        y: 2683
+        width: 84
+        height: 159
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78357bc79595eaa90800000000000000
+      internalID: -7300799705041644665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrouchAttack1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 2473
+        width: 163
+        height: 159
+      alignment: 9
+      pivot: {x: 0.726787, y: 0.2805959}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 587141e3143380860800000000000000
+      internalID: 7496297935065585541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrouchAttack2
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 2513
+        width: 159
+        height: 119
+      alignment: 9
+      pivot: {x: 0.7244754, y: 0.021424878}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b7b6e40d8610360800000000000000
+      internalID: 7134098528609729385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrouchAttack3
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 2513
+        width: 233
+        height: 119
+      alignment: 9
+      pivot: {x: 0.1717511, y: 0.0107134655}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8028b8eb3fc39cd10800000000000000
+      internalID: 2146313714990285320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrouchAttack4
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 2513
+        width: 274
+        height: 119
+      alignment: 9
+      pivot: {x: 0.14178133, y: 0.021424878}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 161d76933c8ed1c20800000000000000
+      internalID: 3178952837172810081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_17
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 2479
+        width: 164
+        height: 153
+      alignment: 9
+      pivot: {x: 0.7409504, y: 0.049989786}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea22a343b78721030800000000000000
+      internalID: 3463963533953868462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_18
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 2483
+        width: 164
+        height: 149
+      alignment: 9
+      pivot: {x: 0.74872273, y: 0.008556391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf01399f60a6f410800000000000000
+      internalID: 1510571126201323443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_19
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 2483
+        width: 314
+        height: 149
+      alignment: 9
+      pivot: {x: 0.12652121, y: 0.017111145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19fab1ee769c62760800000000000000
+      internalID: 7432849683235188625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_20
+      rect:
+        serializedVersion: 2
+        x: 2418
+        y: 2464
+        width: 59
+        height: 152
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a01a41ec3429870800000000000000
+      internalID: 8688081183539530260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_21
+      rect:
+        serializedVersion: 2
+        x: 2588
+        y: 2464
+        width: 84
+        height: 158
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66978e094eca03e0800000000000000
+      internalID: -2086628664161102228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownAttack1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 2238
+        width: 163
+        height: 159
+      alignment: 9
+      pivot: {x: 0.7189667, y: 0.03206841}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d15f5970331aed90800000000000000
+      internalID: -7067815566288924204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownAttack2
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 2238
+        width: 159
+        height: 159
+      alignment: 9
+      pivot: {x: 0.75147367, y: 0.02405169}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800512111ebe247d0800000000000000
+      internalID: -2935524655204577272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownAttack3
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 2238
+        width: 233
+        height: 159
+      alignment: 9
+      pivot: {x: 0.1662802, y: 0.016034972}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89bce6fbd0f035120800000000000000
+      internalID: 2401279578039307160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownAttack4
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 2238
+        width: 274
+        height: 159
+      alignment: 9
+      pivot: {x: 0.13712929, y: 0.03206841}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c990b9ca5c859d130800000000000000
+      internalID: 3591999783832324508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_26
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 2214
+        width: 164
+        height: 157
+      alignment: 9
+      pivot: {x: 0.7229041, y: 0.2751776}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a655910b786aba0800000000000000
+      internalID: -6078021456680883582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_27
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 2253
+        width: 164
+        height: 118
+      alignment: 9
+      pivot: {x: 0.74316853, y: 0.042244606}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84cf74176cc447ce0800000000000000
+      internalID: -1408416368272343992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_28
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 2253
+        width: 314
+        height: 118
+      alignment: 9
+      pivot: {x: 0.12956753, y: 0.0140794655}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b535037595f9140800000000000000
+      internalID: 4728596364770106145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_29
+      rect:
+        serializedVersion: 2
+        x: 2409
+        y: 2233
+        width: 83
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee02f0bbf988ca1b0800000000000000
+      internalID: -5643986013382565650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_30
+      rect:
+        serializedVersion: 2
+        x: 2524
+        y: 2233
+        width: 163
+        height: 79
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99c40d2a6551e63e0800000000000000
+      internalID: -2058684517818807143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UpAttack1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 1988
+        width: 158
+        height: 159
+      alignment: 9
+      pivot: {x: 0.7662347, y: 0.03206841}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8851b7190e654cdb0800000000000000
+      internalID: -4772594182592457336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UpAttack2
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1988
+        width: 154
+        height: 159
+      alignment: 9
+      pivot: {x: 0.78970456, y: 0.03206841}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4b445a0dc01bbb0800000000000000
+      internalID: -4922138827473767188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UpAttack3
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 1988
+        width: 233
+        height: 159
+      alignment: 9
+      pivot: {x: 0.1608093, y: 0.03206841}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d746197dc0c014f90800000000000000
+      internalID: -6971277498897046403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UpAttack4
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 1988
+        width: 274
+        height: 159
+      alignment: 9
+      pivot: {x: 0.13247703, y: 0.040085126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f07165ae481d3b0800000000000000
+      internalID: -5489460328786358391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_35
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 2008
+        width: 164
+        height: 159
+      alignment: 9
+      pivot: {x: 0.7409504, y: 0.28059435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7bf4db188a11e930800000000000000
+      internalID: 4170643901806607231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_36
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 2049
+        width: 164
+        height: 118
+      alignment: 9
+      pivot: {x: 0.74872273, y: 0.032408632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eced24cdfc12de590800000000000000
+      internalID: -7643415815940546866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_37
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 2049
+        width: 314
+        height: 118
+      alignment: 9
+      pivot: {x: 0.122461796, y: 0.021606445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d0d4725c7f4e2410800000000000000
+      internalID: 1454187125065175257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield
+      rect:
+        serializedVersion: 2
+        x: 2403
+        y: 1943
+        width: 99
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84dcbe064d2b30500800000000000000
+      internalID: 361329020348648776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShieldCrouc
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 1943
+        width: 98
+        height: 119
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9955eb4ff27068f0800000000000000
+      internalID: -549312713723651681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_40
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1763
+        width: 169
+        height: 154
+      alignment: 9
+      pivot: {x: 0.7413634, y: 0.049663592}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 825b8ac6c062d72b0800000000000000
+      internalID: -5585266128065088216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_41
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1769
+        width: 163
+        height: 148
+      alignment: 9
+      pivot: {x: 0.7346075, y: 0.017225936}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d63cb875586b7b0800000000000000
+      internalID: -5208829307953910521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_42
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 1769
+        width: 273
+        height: 148
+      alignment: 9
+      pivot: {x: 0.14513847, y: 0.008613381}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4f85b0e4a248940800000000000000
+      internalID: 5297405576380740858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_43
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 1773
+        width: 164
+        height: 159
+      alignment: 9
+      pivot: {x: 0.74872273, y: 0.016034205}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80c783aa4ec98dc0800000000000000
+      internalID: -3636148404158480241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_44
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 1773
+        width: 164
+        height: 159
+      alignment: 9
+      pivot: {x: 0.75649506, y: 0.016034205}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ea406dd2a938560800000000000000
+      internalID: 7314859741434654340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_45
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 1773
+        width: 314
+        height: 159
+      alignment: 9
+      pivot: {x: 0.122461796, y: 0.016034205}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f0a199a3797c860800000000000000
+      internalID: 7550169578242445093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_46
+      rect:
+        serializedVersion: 2
+        x: 2338
+        y: 1704
+        width: 128
+        height: 148
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f766fcc17921d00800000000000000
+      internalID: 941981422068334385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_47
+      rect:
+        serializedVersion: 2
+        x: 2528
+        y: 1704
+        width: 84
+        height: 148
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b9fa6fd1361a79b0800000000000000
+      internalID: -5081724826076644944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_48
+      rect:
+        serializedVersion: 2
+        x: 2663
+        y: 1704
+        width: 114
+        height: 148
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17eb3d4d9f4ca05d0800000000000000
+      internalID: -3095445216567247247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackMace1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1539
+        width: 169
+        height: 153
+      alignment: 9
+      pivot: {x: 0.7388784, y: 0.04098052}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06e1a9a154745ca40800000000000000
+      internalID: 5387790891343289952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackMace2
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1543
+        width: 163
+        height: 149
+      alignment: 9
+      pivot: {x: 0.7286392, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630a50a5698d06200800000000000000
+      internalID: 171374926107090998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackMace3
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 1543
+        width: 273
+        height: 149
+      alignment: 9
+      pivot: {x: 0.13753322, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1914c34b57c5470800000000000000
+      internalID: 8384706023222514134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_52
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 1533
+        width: 164
+        height: 159
+      alignment: 9
+      pivot: {x: 0.7507533, y: 0.01616472}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1defb4ad71879bf0800000000000000
+      internalID: -317642872071394020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_53
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 1533
+        width: 164
+        height: 159
+      alignment: 9
+      pivot: {x: 0.7742615, y: 0.01616472}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518918fe0d04787e0800000000000000
+      internalID: -1763369462976636907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_54
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 1533
+        width: 314
+        height: 159
+      alignment: 9
+      pivot: {x: 0.123471014, y: 0.024247464}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22abc5844eb9b300800000000000000
+      internalID: 268454854317023787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_55
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1278
+        width: 169
+        height: 159
+      alignment: 9
+      pivot: {x: 0.7552082, y: 0.27125943}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 880eff90a0640a620800000000000000
+      internalID: 2783301578646347912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_56
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1318
+        width: 163
+        height: 119
+      alignment: 9
+      pivot: {x: 0.75682, y: 0.010660123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eebdd912323cfe5f0800000000000000
+      internalID: -725146459328095250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_57
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 1318
+        width: 273
+        height: 119
+      alignment: 9
+      pivot: {x: 0.15150155, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a2696858f48a5c0800000000000000
+      internalID: -4204022817243125232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_58
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 1283
+        width: 159
+        height: 159
+      alignment: 9
+      pivot: {x: 0.7712594, y: 0.015956663}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df9f6991e6eb1dfd0800000000000000
+      internalID: -2318862953034089987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_59
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 1283
+        width: 159
+        height: 159
+      alignment: 9
+      pivot: {x: 0.7951937, y: 0.007978331}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da302292168294600800000000000000
+      internalID: 452937635294479277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_60
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 1283
+        width: 314
+        height: 159
+      alignment: 9
+      pivot: {x: 0.11620783, y: 0.023934994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdf19365d5feab560800000000000000
+      internalID: 7330434527656484827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackMaceCrouch1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1063
+        width: 169
+        height: 159
+      alignment: 9
+      pivot: {x: 0.740196, y: 0.25530276}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0fee6d15b1d2d900800000000000000
+      internalID: 707858667263684364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackMaceCrouch2
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1103
+        width: 163
+        height: 119
+      alignment: 9
+      pivot: {x: 0.7412551, y: 0.021320246}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 452a59f3f89d2f770800000000000000
+      internalID: 8643209844147724884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackMaceCrouch3
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 1103
+        width: 273
+        height: 119
+      alignment: 9
+      pivot: {x: 0.13756162, y: 0.010660123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd8262037e262930800000000000000
+      internalID: 4118029980773027312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_64
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 1059
+        width: 159
+        height: 157
+      alignment: 9
+      pivot: {x: 0.803172, y: 0.0080799665}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3300c84b95d49aa0800000000000000
+      internalID: -6155059927791434946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_65
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 1059
+        width: 159
+        height: 157
+      alignment: 9
+      pivot: {x: 0.77923775, y: 0.032319088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5395b49071acb24a0800000000000000
+      internalID: -6616973027201820363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_66
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 1059
+        width: 314
+        height: 157
+      alignment: 9
+      pivot: {x: 0.12024781, y: 0.024239898}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a012fc91ee6b8fcc0800000000000000
+      internalID: -3676987961996533494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_67
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 843
+        width: 169
+        height: 158
+      alignment: 9
+      pivot: {x: 0.7477022, y: 0.008028827}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a7754a2c7481eb00800000000000000
+      internalID: 856111072997111714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_68
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 843
+        width: 163
+        height: 158
+      alignment: 9
+      pivot: {x: 0.73347276, y: 0.016057653}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d834dd59f5692bc0800000000000000
+      internalID: -3807399888269592368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_69
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 843
+        width: 273
+        height: 158
+      alignment: 9
+      pivot: {x: 0.13756162, y: 0.024086095}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8442cf37f7c50eb50800000000000000
+      internalID: 6620393154711135304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_70
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 764
+        width: 163
+        height: 153
+      alignment: 9
+      pivot: {x: 0.7271556, y: 0.0382112}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f163799c0f082790800000000000000
+      internalID: -7554771828125507082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_71
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 768
+        width: 164
+        height: 149
+      alignment: 9
+      pivot: {x: 0.72577053, y: 0.026158275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b183013c0527a7900800000000000000
+      internalID: 682983984695621659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_72
+      rect:
+        serializedVersion: 2
+        x: 1849
+        y: 768
+        width: 313
+        height: 149
+      alignment: 9
+      pivot: {x: 0.12643832, y: 0.013079138}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c74ee378a26cf1f0800000000000000
+      internalID: -1009823740798810172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackMaceDown1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 628
+        width: 169
+        height: 158
+      alignment: 9
+      pivot: {x: 0.7251837, y: 0.008028441}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f3608eed22bcbb0800000000000000
+      internalID: -4914796227573956834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackMaceDown2
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 628
+        width: 163
+        height: 158
+      alignment: 9
+      pivot: {x: 0.73347276, y: 0.008028441}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c511590bf1f832950800000000000000
+      internalID: 6423134859829776732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackMaceDown3
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 628
+        width: 273
+        height: 158
+      alignment: 9
+      pivot: {x: 0.14685483, y: 0.016057268}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55297fce52609fd10800000000000000
+      internalID: 2159764256260067925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_76
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 534
+        width: 163
+        height: 158
+      alignment: 9
+      pivot: {x: 0.7412559, y: 0.26494667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bafea507707ff9dc0800000000000000
+      internalID: -3629911163315490901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_77
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 573
+        width: 164
+        height: 119
+      alignment: 9
+      pivot: {x: 0.737653, y: 0.016375886}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 699544a9716746fd0800000000000000
+      internalID: -2349623261836060266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_78
+      rect:
+        serializedVersion: 2
+        x: 1849
+        y: 573
+        width: 313
+        height: 119
+      alignment: 9
+      pivot: {x: 0.12643832, y: 0.016375886}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e8fce1ebb3de990800000000000000
+      internalID: -7355156928679408019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_79
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 353
+        width: 164
+        height: 159
+      alignment: 9
+      pivot: {x: 0.76141775, y: 0.024512526}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 766943bd59c8e2280800000000000000
+      internalID: -9066154424594557337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_80
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 353
+        width: 158
+        height: 159
+      alignment: 9
+      pivot: {x: 0.7590114, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5242bf1478976470800000000000000
+      internalID: 8387840455516242523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_81
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 353
+        width: 273
+        height: 159
+      alignment: 9
+      pivot: {x: 0.13594832, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256be8b97122db040800000000000000
+      internalID: 4664922273815115346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_82
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 298
+        width: 163
+        height: 158
+      alignment: 9
+      pivot: {x: 0.739111, y: 0.024667282}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48bdc0011abcc4350800000000000000
+      internalID: 6002396295997479812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_83
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 298
+        width: 164
+        height: 158
+      alignment: 9
+      pivot: {x: 0.76141804, y: 0.012333544}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5cd14ba85e0361a0800000000000000
+      internalID: -6817589636915667878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_84
+      rect:
+        serializedVersion: 2
+        x: 1849
+        y: 298
+        width: 313
+        height: 158
+      alignment: 9
+      pivot: {x: 0.1326643, y: 0.012333544}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5138be8a5ea4fa6a0800000000000000
+      internalID: -6435842992247176427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackMaceUp1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 139
+        width: 164
+        height: 158
+      alignment: 9
+      pivot: {x: 0.76141775, y: 0.012333544}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b9ea2b08c290900800000000000000
+      internalID: 651100552396970866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackMaceUp2
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 139
+        width: 158
+        height: 158
+      alignment: 9
+      pivot: {x: 0.77134514, y: 0.012333544}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc2733d44db7c2a0800000000000000
+      internalID: -6717192215900771085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackMaceUp3
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 139
+        width: 273
+        height: 158
+      alignment: 9
+      pivot: {x: 0.15022495, y: 0.024667379}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f950747ac4a04e0800000000000000
+      internalID: -2014713601960075467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_88
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 48
+        width: 157
+        height: 159
+      alignment: 9
+      pivot: {x: 0.7730736, y: 0.024512742}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d870aa513e115cd0800000000000000
+      internalID: -2571240714929145644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_89
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 48
+        width: 158
+        height: 159
+      alignment: 9
+      pivot: {x: 0.78367984, y: 0.024512742}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac894e8f50fa10e80800000000000000
+      internalID: -8214091805161645878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES - Castlevania 2 Simons Quest - Simon Belmont_90
+      rect:
+        serializedVersion: 2
+        x: 1849
+        y: 48
+        width: 313
+        height: 159
+      alignment: 9
+      pivot: {x: 0.12643832, y: 0.012256455}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5ab971eaeeafea0800000000000000
+      internalID: -5838091535444630040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
