@@ -4,45 +4,67 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    private Animator anim;
-    public float attackTime;
-    public float startTimeAttack;
+    Rigidbody2D rb;
+    Animator anim;
+    SpriteRenderer Simon;
 
-    public Transform attackLocation;
+    public bool isAttacking;
+    private float timeBtwAttack;
+    public float startTimeBtwAttack;
+    public float attackBoxX;
+    public float attackBoxY;
+
+    public Transform attackPos;
     public float attackRange;
-    public LayerMask Enemies;
+    public LayerMask whatIsEnemies;
+    public int damage;
+
+
 
     private void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        Simon = GetComponent<SpriteRenderer>();
+
+        if (!rb)
+        {
+            Debug.Log("Rigidbody2D does not exist");
+        }
+        if (!anim)
+        {
+            Debug.Log("Animation does not exist");
+        }
     }
 
     void Update()
     {
-        if (attackTime <= 0)
+        if(timeBtwAttack <= 0)
         {
             if (Input.GetButtonDown("Fire1"))
             {
-                anim.SetBool("isAttacking", true);
-                Collider2D[] damage = Physics2D.OverlapCircleAll(attackLocation.position, attackRange, Enemies);
-
-                for (int i = 0; i < damage.Length; i++)
+                isAttacking = true;
+                anim.SetBool("isAttacking", isAttacking);
+                timeBtwAttack = startTimeBtwAttack;
+                Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
+                for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
-                    Destroy(damage[i].gameObject);
+                    
                 }
             }
-            attackTime = startTimeAttack;
         }
         else
         {
-            attackTime -= Time.deltaTime;
-            anim.SetBool("isAttacking", false);
+            isAttacking = false;
+            anim.SetBool("isAttacking", isAttacking);
+            timeBtwAttack -= Time.deltaTime;
         }
     }
 
-    private void OnDrawGizmosSelected()
+    void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(attackLocation.position, attackRange);
+        Gizmos.DrawWireCube(attackPos.position, new Vector2 (attackBoxX, attackBoxY));
     }
+
 }

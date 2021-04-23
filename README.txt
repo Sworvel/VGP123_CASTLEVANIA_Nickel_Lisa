@@ -1,1 +1,0 @@
-didnt finish it cuz i dont know what i dont know. i dont know what to even search up to help. 
