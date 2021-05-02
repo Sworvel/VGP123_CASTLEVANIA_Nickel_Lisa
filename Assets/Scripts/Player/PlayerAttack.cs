@@ -39,6 +39,9 @@ public class PlayerAttack : MonoBehaviour
 
     void Update()
     {
+        isAttacking = false;
+        anim.SetBool("isAttacking", isAttacking);
+
         if(timeBtwAttack <= 0)
         {
             if (Input.GetButtonDown("Fire1"))
@@ -55,8 +58,6 @@ public class PlayerAttack : MonoBehaviour
         }
         else
         {
-            isAttacking = false;
-            anim.SetBool("isAttacking", isAttacking);
             timeBtwAttack -= Time.deltaTime;
         }
     }

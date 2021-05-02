@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - PickUp
   layers:
   - Default
   - TransparentFX
@@ -13,7 +14,7 @@ TagManager:
   - UI
   - Sprites
   - Enemies
-  - 
+  - Player
   - 
   - 
   - 
@@ -44,6 +45,12 @@ TagManager:
   - name: Ground
     uniqueID: 1461843499
     locked: 0
+  - name: Enemies
+    uniqueID: 1553985953
+    locked: 0
   - name: Sprites
     uniqueID: 3774890277
+    locked: 0
+  - name: Player
+    uniqueID: 3606623357
     locked: 0

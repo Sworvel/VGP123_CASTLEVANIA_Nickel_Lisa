@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask isGroundLayer;
     public Transform groundCheck;
     public float groundChekcRadius;
+    public bool isCrouched;
 
     void Start()
     {
@@ -48,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
     {
         float horizontalInput = Input.GetAxisRaw("Horizontal");
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundChekcRadius, isGroundLayer);
+        isCrouched = false;
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
@@ -59,11 +61,19 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = moveDirection;
 
         float verticalInput = Input.GetAxisRaw("Vertical");
+
+        if (Input.GetAxisRaw("Vertical") < 0)
+        {
+            isCrouched = true;
+        }
     
         anim.SetFloat("speed", Mathf.Abs(horizontalInput));
         anim.SetBool("isGrounded", isGrounded);
+        anim.SetBool("isCrouched", isCrouched);
 
         if (Simon.flipX && horizontalInput > 0 || !Simon.flipX && horizontalInput < 0)
             Simon.flipX = !Simon.flipX;
     }
+
+    
 }
