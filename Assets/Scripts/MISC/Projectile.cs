@@ -41,4 +41,10 @@ public class Projectile : MonoBehaviour
             DaggerSprite.flipX = false;
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag != "Player" && collision.gameObject.tag != "PickUp")
+            Destroy(this.gameObject);
+    }
 }

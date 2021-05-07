@@ -5,6 +5,27 @@ TextureImporter:
   - first:
       213: 832945567411728741
     second: Dagger
+  - first:
+      213: -5250002976968047724
+    second: HalfHeart
+  - first:
+      213: 7574758040880706976
+    second: SilverDagger
+  - first:
+      213: 4708283205017584568
+    second: Diamond1
+  - first:
+      213: 3915352071403007928
+    second: Diamond2
+  - first:
+      213: 3800585405668731506
+    second: Diamond3
+  - first:
+      213: 2048253478818532024
+    second: Diamond3
+  - first:
+      213: 7621761359027962688
+    second: OakStake
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -102,7 +123,7 @@ TextureImporter:
         width: 54
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -110,6 +131,153 @@ TextureImporter:
       bones: []
       spriteID: 561ffc694973f8b00800000000000000
       internalID: 832945567411728741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalfHeart
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 787
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4938310bb1e3427b0800000000000000
+      internalID: -5250002976968047724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SilverDagger
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 644
+        width: 49
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a57a3e2e42fe1960800000000000000
+      internalID: 7574758040880706976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond1
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 690
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b3c20121ae275140800000000000000
+      internalID: 4708283205017584568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond2
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 690
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bfe09ae6ff165630800000000000000
+      internalID: 3915352071403007928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond4
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 630
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27a2b634a446eb430800000000000000
+      internalID: 3800585405668731506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond3
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 630
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bacfe6dfabdc6c10800000000000000
+      internalID: 2048253478818532024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OakStake
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 849
+        width: 51
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04309aff29fe5c960800000000000000
+      internalID: 7621761359027962688
       vertices: []
       indices: 
       edges: []

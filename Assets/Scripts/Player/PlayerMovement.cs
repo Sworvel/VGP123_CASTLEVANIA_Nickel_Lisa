@@ -17,6 +17,11 @@ public class PlayerMovement : MonoBehaviour
     public float groundChekcRadius;
     public bool isCrouched;
 
+    public int score = 0;
+    public int lives = 3;
+
+    bool coroutineRunning = false;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -75,5 +80,26 @@ public class PlayerMovement : MonoBehaviour
             Simon.flipX = !Simon.flipX;
     }
 
-    
+   public void StartSpeedChange()
+    {
+        if (!coroutineRunning)
+        {
+            StartCoroutine(SpeedChange());
+        }
+        else
+        {
+            StopCoroutine(SpeedChange());
+            StartCoroutine(SpeedChange());
+        }
+    }
+
+   IEnumerator SpeedChange()
+    {
+        coroutineRunning = true;
+        speed = 4;
+        yield return new WaitForSeconds(5.0f);
+        speed = 2;
+        coroutineRunning = false;
+    }
+
 }

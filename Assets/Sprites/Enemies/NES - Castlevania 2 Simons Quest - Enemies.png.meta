@@ -40,7 +40,7 @@ TextureImporter:
     second: NES - Castlevania 2 Simons Quest - Enemies_11
   - first:
       213: 3175810809257615194
-    second: NES - Castlevania 2 Simons Quest - Enemies_12
+    second: Spider2
   - first:
       213: -2380816671626063019
     second: NES - Castlevania 2 Simons Quest - Enemies_13
@@ -127,7 +127,7 @@ TextureImporter:
     second: NES - Castlevania 2 Simons Quest - Enemies_40
   - first:
       213: 100719542236177794
-    second: NES - Castlevania 2 Simons Quest - Enemies_41
+    second: Spider1
   - first:
       213: -4221983454652805809
     second: NES - Castlevania 2 Simons Quest - Enemies_42
@@ -160,7 +160,7 @@ TextureImporter:
     second: NES - Castlevania 2 Simons Quest - Enemies_51
   - first:
       213: -4799895387184966212
-    second: NES - Castlevania 2 Simons Quest - Enemies_52
+    second: SpiderWeb
   - first:
       213: 7251521869798794957
     second: NES - Castlevania 2 Simons Quest - Enemies_53
@@ -805,7 +805,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - Castlevania 2 Simons Quest - Enemies_12
+      name: Spider2
       rect:
         serializedVersion: 2
         x: 2010
@@ -1414,7 +1414,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - Castlevania 2 Simons Quest - Enemies_41
+      name: Spider1
       rect:
         serializedVersion: 2
         x: 2010
@@ -1645,7 +1645,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NES - Castlevania 2 Simons Quest - Enemies_52
+      name: SpiderWeb
       rect:
         serializedVersion: 2
         x: 2010
