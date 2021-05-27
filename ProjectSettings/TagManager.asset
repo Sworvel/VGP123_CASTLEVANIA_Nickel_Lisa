@@ -6,6 +6,11 @@ TagManager:
   tags:
   - PickUp
   - Enemies
+  - SquishCollider
+  - Barrier
+  - Stairs
+  - PlayerProjectile
+  - EnemyProjectile
   layers:
   - Default
   - TransparentFX
@@ -15,9 +20,9 @@ TagManager:
   - UI
   - Sprites
   - Enemies
+  - Barrier
   - Player
-  - 
-  - 
+  - AgroZone
   - 
   - 
   - 

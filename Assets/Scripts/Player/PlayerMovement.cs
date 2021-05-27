@@ -16,9 +16,10 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheck;
     public float groundChekcRadius;
     public bool isCrouched;
+    public int BounceForce;
 
     public int score = 0;
-    public int lives = 3;
+    public int health = 3;
 
     bool coroutineRunning = false;
 
@@ -48,6 +49,10 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("Groundcheck does not exist, please assign a ground check object.");
         }
 
+        if (BounceForce <= 0)
+        {
+            BounceForce = 10;
+        }
     }
 
     void Update()
@@ -71,7 +76,7 @@ public class PlayerMovement : MonoBehaviour
         {
             isCrouched = true;
         }
-    
+
         anim.SetFloat("speed", Mathf.Abs(horizontalInput));
         anim.SetBool("isGrounded", isGrounded);
         anim.SetBool("isCrouched", isCrouched);
@@ -80,7 +85,7 @@ public class PlayerMovement : MonoBehaviour
             Simon.flipX = !Simon.flipX;
     }
 
-   public void StartSpeedChange()
+    public void StartSpeedChange()
     {
         if (!coroutineRunning)
         {
@@ -93,7 +98,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-   IEnumerator SpeedChange()
+    IEnumerator SpeedChange()
     {
         coroutineRunning = true;
         speed = 4;
@@ -102,4 +107,25 @@ public class PlayerMovement : MonoBehaviour
         coroutineRunning = false;
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "SquishCollider")
+        {
+            if (!isGrounded)
+            {
+                collision.gameObject.GetComponentInParent<EnemyWalker>().IsSquished();
+                rb.velocity = Vector2.zero;
+                rb.AddForce(Vector2.up * BounceForce);
+            }
+        }
+    }
+
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.tag == "EnemyProjectile")
+    //    {
+    //        //health--;
+    //        print("Player Hit");
+    //    }
+    //}
 }

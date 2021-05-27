@@ -5,17 +5,17 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Projectile : MonoBehaviour
 {
-    SpriteRenderer DaggerSprite;
+    SpriteRenderer rbSprite;
 
     public float speed;
     public float lifetime;
 
-    private Rigidbody2D Dagger;
+    private Rigidbody2D rb;
 
     void Awake()
     {
-        Dagger = GetComponent<Rigidbody2D>();
-        DaggerSprite = GetComponent<SpriteRenderer>();
+        rb = GetComponent<Rigidbody2D>();
+        rbSprite = GetComponent<SpriteRenderer>();
     }
 
     // Start is called before the first frame update
@@ -32,19 +32,38 @@ public class Projectile : MonoBehaviour
 
     void Update()
     {
-        if (Dagger.velocity.x < 0)
+        if (rb.velocity.x < 0)
         {
-            DaggerSprite.flipX = true;
+            rbSprite.flipX = true;
         }
         else
         {
-            DaggerSprite.flipX = false;
+            rbSprite.flipX = false;
+        }
+        if (gameObject.tag == "EnemyProjectile")
+        {
+            if (rb.velocity.x < 0)
+            {
+                rbSprite.flipX = false;
+            }
+            else
+            {
+                rbSprite.flipX = true;
+            }
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag != "Player" && collision.gameObject.tag != "PickUp")
+        if (collision.gameObject.tag == "Enemies")
+        {
+            collision.gameObject.GetComponent<EnemyWalker>().IsDead();
             Destroy(this.gameObject);
+        }
+
+        else if (collision.gameObject.tag != "Player" && collision.gameObject.tag != "PickUp")
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

@@ -37,6 +37,10 @@ public class PlayerFire : MonoBehaviour
         {
             anim.SetBool("isShooting", true);
         }
+        else
+        {
+            anim.SetBool("isShooting", false);
+        }
     }
 
     public void FireProjectile()
@@ -54,8 +58,8 @@ public class PlayerFire : MonoBehaviour
         }
     }
 
-    void ResetFire()
-    {
-        anim.SetBool("isShooting", false);
-    }
+    //void ResetFire()
+    //{
+    //    anim.SetBool("isShooting", false);
+    //}
 }

@@ -31,16 +31,16 @@ TextureImporter:
     second: Torch9
   - first:
       213: 5375081998481383388
-    second: Flame9
-  - first:
-      213: 7112448730157842919
     second: Flame8
   - first:
+      213: 7112448730157842919
+    second: Flame7
+  - first:
       213: 7606258723961335049
-    second: Flame6
+    second: Flame9
   - first:
       213: -6979673811054122149
-    second: Flame7
+    second: Flame6
   - first:
       213: 640453295626651137
     second: TorchBroken1
@@ -52,19 +52,19 @@ TextureImporter:
     second: TorchBroken3
   - first:
       213: -8648050445120388144
-    second: Flame1
+    second: Flame9
   - first:
       213: 7364723323355802435
-    second: Flame2
+    second: Flame6
   - first:
       213: -6147911114039902886
-    second: Flame3
+    second: Flame7
   - first:
       213: 5621805327504841260
-    second: Flame4
+    second: Flame8
   - first:
       213: 1179184885352774403
-    second: Flame5
+    second: Flame9
   - first:
       213: 461558017382434171
     second: Flame10
@@ -77,6 +77,9 @@ TextureImporter:
   - first:
       213: -8610876892920964015
     second: Flame13
+  - first:
+      213: -4318226590815610791
+    second: Flame0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -355,7 +358,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flame9
+      name: Flame4
       rect:
         serializedVersion: 2
         x: 1280
@@ -376,7 +379,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flame8
+      name: Flame3
       rect:
         serializedVersion: 2
         x: 1130
@@ -397,7 +400,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flame6
+      name: Flame1
       rect:
         serializedVersion: 2
         x: 815
@@ -418,7 +421,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flame7
+      name: Flame2
       rect:
         serializedVersion: 2
         x: 970
@@ -502,11 +505,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flame1
+      name: Flame5
       rect:
         serializedVersion: 2
         x: 39
-        y: 1474
+        y: 1475
         width: 76
         height: 155
       alignment: 7
@@ -523,11 +526,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flame2
+      name: Flame6
       rect:
         serializedVersion: 2
         x: 190
-        y: 1474
+        y: 1475
         width: 85
         height: 160
       alignment: 7
@@ -544,11 +547,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flame3
+      name: Flame7
       rect:
         serializedVersion: 2
         x: 335
-        y: 1475
+        y: 1474
         width: 105
         height: 161
       alignment: 7
@@ -565,11 +568,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flame4
+      name: Flame8
       rect:
         serializedVersion: 2
         x: 485
-        y: 1474
+        y: 1475
         width: 114
         height: 166
       alignment: 7
@@ -586,11 +589,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flame5
+      name: Flame9
       rect:
         serializedVersion: 2
         x: 654
-        y: 1474
+        y: 1475
         width: 86
         height: 173
       alignment: 7
@@ -686,6 +689,27 @@ TextureImporter:
       bones: []
       spriteID: 15c93d89615008880800000000000000
       internalID: -8610876892920964015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame0
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 1316
+        width: 72
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9581aca6bc39214c0800000000000000
+      internalID: -4318226590815610791
       vertices: []
       indices: 
       edges: []

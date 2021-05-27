@@ -8,7 +8,7 @@ public class PickupScript : MonoBehaviour
     {
         POWERUP,
         COLLECTIBLE,
-        LIVES,
+        health,
 
     }
 
@@ -43,10 +43,10 @@ public class PickupScript : MonoBehaviour
                     collision.gameObject.GetComponent<PlayerMovement>().StartSpeedChange();
                     break;
 
-                case CollectibleType.LIVES:
+                case CollectibleType.health:
                     pmScript = collision.gameObject.GetComponent<PlayerMovement>();
-                    pmScript.lives++;
-                    Debug.Log(pmScript.lives);
+                    pmScript.health++;
+                    Debug.Log(pmScript.health);
                     break;
             }
             Destroy(gameObject);
