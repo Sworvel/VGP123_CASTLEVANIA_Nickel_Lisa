@@ -8,7 +8,7 @@ public class EnemyWalker : MonoBehaviour
     Rigidbody2D rb;
     SpriteRenderer sr;
     Animator anim;
-    BoxCollider2D coll;
+    BoxCollider2D enemyColl;
     BoxCollider2D playerColl;
     BoxCollider2D squishColl;
 
@@ -21,7 +21,7 @@ public class EnemyWalker : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
-        coll = this.transform.GetComponent<BoxCollider2D>();
+        enemyColl = this.transform.GetComponent<BoxCollider2D>();
         playerColl = GameObject.Find("Player").GetComponent<BoxCollider2D>();
 
         if (speed <= 0)
@@ -50,7 +50,7 @@ public class EnemyWalker : MonoBehaviour
             }
         }
 
-        Physics2D.IgnoreCollision(coll, playerColl);
+        Physics2D.IgnoreCollision(enemyColl, playerColl);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -66,6 +66,11 @@ public class EnemyWalker : MonoBehaviour
         if (collision.gameObject.tag == "PlayerProjectile")
         {
             IsDead();
+        }
+
+        if (collision.gameObject.tag == "Player")
+        {
+            GameManager.instance.PlayerDeath();
         }
     }
 

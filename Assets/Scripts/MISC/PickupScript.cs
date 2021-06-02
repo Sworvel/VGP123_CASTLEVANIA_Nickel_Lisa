@@ -34,9 +34,7 @@ public class PickupScript : MonoBehaviour
             switch (currentCollectible)
             {
                 case CollectibleType.COLLECTIBLE:
-                    PlayerMovement pmScript = collision.gameObject.GetComponent<PlayerMovement>();
-                    pmScript.score++;
-                    Debug.Log(pmScript.score);
+                    GameManager.instance.score++;
                     break;
 
                 case CollectibleType.POWERUP:
@@ -44,9 +42,7 @@ public class PickupScript : MonoBehaviour
                     break;
 
                 case CollectibleType.health:
-                    pmScript = collision.gameObject.GetComponent<PlayerMovement>();
-                    pmScript.health++;
-                    Debug.Log(pmScript.health);
+                    GameManager.instance.health++;
                     break;
             }
             Destroy(gameObject);

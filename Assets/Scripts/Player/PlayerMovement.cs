@@ -82,7 +82,9 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("isCrouched", isCrouched);
 
         if (Simon.flipX && horizontalInput > 0 || !Simon.flipX && horizontalInput < 0)
+        {
             Simon.flipX = !Simon.flipX;
+        }
     }
 
     public void StartSpeedChange()
@@ -119,13 +121,4 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
-
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if (collision.gameObject.tag == "EnemyProjectile")
-    //    {
-    //        //health--;
-    //        print("Player Hit");
-    //    }
-    //}
 }
