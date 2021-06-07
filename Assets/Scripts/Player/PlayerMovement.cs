@@ -18,8 +18,8 @@ public class PlayerMovement : MonoBehaviour
     public bool isCrouched;
     public int BounceForce;
 
-    public int score = 0;
-    public int health = 3;
+    public int Score = 0;
+    public int Health = 3;
 
     bool coroutineRunning = false;
 

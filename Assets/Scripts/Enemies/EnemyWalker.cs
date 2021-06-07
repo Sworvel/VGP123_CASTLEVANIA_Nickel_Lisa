@@ -13,7 +13,7 @@ public class EnemyWalker : MonoBehaviour
     BoxCollider2D squishColl;
 
     public float speed;
-    public int health;
+    public int Health;
 
     // Start is called before the first frame update
     void Start()
@@ -22,16 +22,16 @@ public class EnemyWalker : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         enemyColl = this.transform.GetComponent<BoxCollider2D>();
-        playerColl = GameObject.Find("Player").GetComponent<BoxCollider2D>();
+        //playerColl = GameObject.Find("Player").GetComponent<BoxCollider2D>();
 
         if (speed <= 0)
         {
             speed = 5.0f;
         }
 
-        if (health <= 0)
+        if (Health <= 0)
         {
-            health = 3;
+            Health = 3;
         }
     }
 
@@ -50,7 +50,8 @@ public class EnemyWalker : MonoBehaviour
             }
         }
 
-        Physics2D.IgnoreCollision(enemyColl, playerColl);
+        //Physics2D.IgnoreCollision(enemyColl, playerColl);
+        // for some reason these caused a bunch of errors with the playerColl... still works without it tho
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -76,8 +77,8 @@ public class EnemyWalker : MonoBehaviour
 
     public void IsDead()
     {
-        health--;
-        if (health <= 0)
+        Health--;
+        if (Health <= 0)
         {
             anim.SetBool("Death", true);
             rb.velocity = Vector2.zero;

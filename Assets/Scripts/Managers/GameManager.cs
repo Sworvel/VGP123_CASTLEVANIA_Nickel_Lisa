@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 {
     static GameManager _instance = null;
 
+    private float fixedDeltaTime = 1.0f;
+
     public static GameManager instance
     {
         get { return _instance; }
@@ -27,28 +29,28 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    int _health = 3;
+    int _Health = 3;
 
-    public int health
+    public int Health
     {
-        get { return _health; }
+        get { return _Health; }
         set
         {
-            if(_health > value)
+            if(_Health > value)
             {
                 //respawn code goes here
             }
-            _health = value;
+            _Health = value;
 
-            if (_health > maxHealth)
+            if (_Health > maxHealth)
             {
-                _health = maxHealth;
+                _Health = maxHealth;
             }
-            else if (_health <= 0)
+            else if (_Health <= 0)
             {
                 PlayerDeath();
             }
-            Debug.Log("Current Health Is: " + _health);
+            Debug.Log("Current Health Is: " + _Health);
         }
     }
 
@@ -59,6 +61,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        this.fixedDeltaTime = Time.fixedDeltaTime;
+
         if (instance)
         {
             Destroy(gameObject);
@@ -76,25 +80,25 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (SceneManager.GetActiveScene().name == "SampleScene")
+            if (SceneManager.GetActiveScene().name == "TitleScene")
             {
-                SceneManager.LoadScene("TitleScene");
+                SceneManager.LoadScene("TitleScene2");
             }
-            else if (SceneManager.GetActiveScene().name == "TitleScene")
+            else if (SceneManager.GetActiveScene().name == "TitleScene2")
             {
-                SceneManager.LoadScene("SampleScene");
+                SceneManager.LoadScene("TitleScene3");
             }
-
-            if (Input.GetKeyDown(KeyCode.Backspace))
-            {
-                QuitGame();
-            }
-
-            if (SceneManager.GetActiveScene().name == "GameOverScene")
+            else if (SceneManager.GetActiveScene().name == "GameOverScene")
             {
                 SceneManager.LoadScene("TitleScene");
             }
         }
+        if (Input.GetKeyDown(KeyCode.Backspace))
+        {
+            QuitGame();
+        }
+
+        this.fixedDeltaTime = Time.fixedDeltaTime;
     }
 
     public void QuitGame()
@@ -128,5 +132,27 @@ public class GameManager : MonoBehaviour
     public void PlayerDeath()
     {
         SceneManager.LoadScene("GameOverScene");
+    }
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
+
+    public void ReturnToMainMenu()
+    {
+        SceneManager.LoadScene("TitleScene");
+    }
+
+    public void IsPaused()
+    {
+        if (Time.timeScale == 1.0f)
+            Time.timeScale = 0.0f;
+    }
+
+    public void ResumeGame()
+    {
+        if (Time.timeScale == 0.0f)
+            Time.timeScale = 1.0f;
     }
 }

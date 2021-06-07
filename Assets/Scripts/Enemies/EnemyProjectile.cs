@@ -20,7 +20,7 @@ public class EnemyProjectile : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            GameManager.instance.health--;
+            GameManager.instance.Health--;
             Destroy(this.gameObject);
         }
     }

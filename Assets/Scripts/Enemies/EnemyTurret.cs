@@ -15,7 +15,7 @@ public class EnemyTurret : MonoBehaviour
     public float projectileForce;
     public float agroRange;
     public float projectileFireRate;
-    public int health;
+    public int Health;
 
     // float timeSinceLastFire = 2.0f;
     bool canFire;
@@ -24,7 +24,6 @@ public class EnemyTurret : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-        Player = GameManager.instance.playerInstance;
 
         if (projectileForce <= 0)
         {
@@ -36,32 +35,39 @@ public class EnemyTurret : MonoBehaviour
             projectileFireRate = 4.0f;
         }
 
-        if (health <= 0)
+        if (Health <= 0)
         {
-            health = 6;
+            Health = 6;
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        float distance = Vector2.Distance(transform.position, Player.transform.position);
-        if (distance <= agroRange)
+        if (Player)
         {
-            canFire = true;
+            float distance = Vector2.Distance(transform.position, Player.transform.position);
+            if (distance <= agroRange)
+            {
+                canFire = true;
+            }
+            else
+            {
+                canFire = false;
+            }
+
+            if (canFire)
+            {
+                anim.SetBool("isActive", true);
+            }
+            else if (!canFire)
+            {
+                anim.SetBool("isActive", false);
+            }
         }
         else
         {
-            canFire = false;
-        }
-
-        if (canFire)
-        {
-            anim.SetBool("isActive", true);
-        }    
-        else if (!canFire)
-        {
-            anim.SetBool("isActive", false);
+            Player = GameManager.instance.playerInstance;
         }
     }
 
@@ -92,9 +98,9 @@ public class EnemyTurret : MonoBehaviour
     {
         if (collision.gameObject.tag == "PlayerProjectile")
         {
-            health--;
+            Health--;
             Destroy(collision.gameObject);
-            if (health <= 0)
+            if (Health <= 0)
             {
                 Destroy(gameObject.transform.parent.gameObject);
             }
