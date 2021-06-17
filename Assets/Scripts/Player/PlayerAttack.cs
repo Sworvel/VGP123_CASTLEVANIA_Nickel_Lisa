@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class PlayerAttack : MonoBehaviour
 {
     Rigidbody2D rb;
     Animator anim;
     SpriteRenderer Simon;
+    AudioSource WhipAudioSource;
 
     public bool isAttacking;
     private float timeBtwAttack;
@@ -19,7 +21,8 @@ public class PlayerAttack : MonoBehaviour
     public LayerMask whatIsEnemies;
     public int damage;
 
-
+    public AudioClip WhipSFX;
+    public AudioMixerGroup audioMixer;
 
     private void Start()
     {
@@ -41,26 +44,37 @@ public class PlayerAttack : MonoBehaviour
     {
         isAttacking = false;
         anim.SetBool("isAttacking", isAttacking);
-
-        if(timeBtwAttack <= 0)
+        float horizontalInput = Input.GetAxisRaw("Horizontal");
+        if (horizontalInput == 0)
         {
-            if (Input.GetButtonDown("Fire1"))
+            if (timeBtwAttack <= 0)
             {
-                isAttacking = true;
-                anim.SetBool("isAttacking", isAttacking);
-                timeBtwAttack = startTimeBtwAttack;
-                Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
-                for (int i = 0; i < enemiesToDamage.Length; i++)
+                if (Input.GetButtonDown("Fire1"))
                 {
-                    
+                    isAttacking = true;
+                    anim.SetBool("isAttacking", isAttacking);
+                    timeBtwAttack = startTimeBtwAttack;
+                    Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
+                    //for (int i = 0; i < enemiesToDamage.Length; i++) 
+                    if (!WhipAudioSource)
+                    {
+                        WhipAudioSource = gameObject.AddComponent<AudioSource>();
+                        WhipAudioSource.clip = WhipSFX;
+                        WhipAudioSource.outputAudioMixerGroup = audioMixer;
+                        WhipAudioSource.loop = false;
+                    }
+                    WhipAudioSource.Play();
                 }
             }
-        }
-        else
-        {
-            timeBtwAttack -= Time.deltaTime;
+            else
+            {
+                timeBtwAttack -= Time.deltaTime;
+            }
         }
     }
+
+    // add another child object, and when player attacks and something on
+    // enemy layer is colliding, that enemy will take damage
 
     void OnDrawGizmosSelected()
     {

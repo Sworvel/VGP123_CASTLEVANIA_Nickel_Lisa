@@ -1,6 +1,10 @@
+//What i Should do next time is separate all elements of the enemy into diferent scripts.
+//eg. health is in one, sound is in another, all collisions in another, and so forth 
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 [RequireComponent(typeof(Animator))]
 public class EnemyTurret : MonoBehaviour
@@ -9,8 +13,16 @@ public class EnemyTurret : MonoBehaviour
     public Projectile projectilePrefab;
     public GameObject Player;
     public SpriteRenderer EnemyProjectile;
+    public GameObject Flame;
 
     Animator anim;
+
+    AudioSource TurretTakeDamage;
+    AudioSource TurretDeathAudioSource;
+
+    public AudioClip TurretTakeDamageSFX;
+    public AudioClip TurretDeathSFX;
+    public AudioMixerGroup audioMixer;
 
     public float projectileForce;
     public float agroRange;
@@ -39,6 +51,11 @@ public class EnemyTurret : MonoBehaviour
         {
             Health = 6;
         }
+
+        if (!Flame)
+        {
+
+        }
     }
 
     // Update is called once per frame
@@ -47,7 +64,7 @@ public class EnemyTurret : MonoBehaviour
         if (Player)
         {
             float distance = Vector2.Distance(transform.position, Player.transform.position);
-            if (distance <= agroRange)
+            if (distance <= agroRange && Health > 0)
             {
                 canFire = true;
             }
@@ -69,6 +86,10 @@ public class EnemyTurret : MonoBehaviour
         {
             Player = GameManager.instance.playerInstance;
         }
+        if (Health <= 0)
+        {
+            TurretDeath();
+        }
     }
 
     public void fire()
@@ -78,14 +99,12 @@ public class EnemyTurret : MonoBehaviour
         {
             Projectile temp = Instantiate(projectilePrefab, projectileSpawnPoint.position, projectileSpawnPoint.rotation);
             temp.speed = projectileForce;
-            //EnemyProjectile.flipX = true;
         }
 
-        if (transform.position.x > Player.transform.position.x)
+        else if (transform.position.x > Player.transform.position.x)
         {
             Projectile temp = Instantiate(projectilePrefab, projectileSpawnPoint.position, projectileSpawnPoint.rotation);
             temp.speed = -projectileForce;
-            //EnemyProjectile.flipX = false;
         }
     }
 
@@ -98,12 +117,47 @@ public class EnemyTurret : MonoBehaviour
     {
         if (collision.gameObject.tag == "PlayerProjectile")
         {
+            if (!TurretTakeDamage)
+            {
+                TurretTakeDamage = gameObject.AddComponent<AudioSource>();
+                TurretTakeDamage.clip = TurretTakeDamageSFX;
+                TurretTakeDamage.outputAudioMixerGroup = audioMixer;
+                TurretTakeDamage.loop = false;
+            }
+            TurretTakeDamage.Play();
             Health--;
             Destroy(collision.gameObject);
-            if (Health <= 0)
-            {
-                Destroy(gameObject.transform.parent.gameObject);
-            }
         }
-    } 
+    }
+
+    public void TurretDeath()
+    {
+        anim.SetBool("isDead", true);
+    }
+
+    public void TurretDeathSound()
+    {
+        if (!TurretDeathAudioSource)
+        {
+            TurretDeathAudioSource = gameObject.AddComponent<AudioSource>();
+            TurretDeathAudioSource.clip = TurretDeathSFX;
+            TurretDeathAudioSource.outputAudioMixerGroup = audioMixer;
+            TurretDeathAudioSource.loop = false;
+        }
+        TurretDeathAudioSource.Play();
+    }
+
+    public void DestroyTurretFlame()
+    {
+        foreach (Transform child in transform)
+        {
+            GameObject.Destroy(child.gameObject);
+        }
+    }
+
+    public void FinishedDeath()
+    {
+        Destroy(gameObject);
+    }
+
 }

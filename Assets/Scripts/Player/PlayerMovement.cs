@@ -57,33 +57,41 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        float horizontalInput = Input.GetAxisRaw("Horizontal");
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundChekcRadius, isGroundLayer);
-        isCrouched = false;
-
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (Time.timeScale == 1)
         {
-            rb.velocity = Vector2.zero;
-            rb.AddForce(Vector2.up * jumpForce);
-        }
+            float horizontalInput = Input.GetAxisRaw("Horizontal");
+            isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundChekcRadius, isGroundLayer);
+            //isCrouched = false;
 
-        Vector2 moveDirection = new Vector2(horizontalInput * speed, rb.velocity.y);
-        rb.velocity = moveDirection;
+            if (Input.GetButtonDown("Jump") && isGrounded)
+            {
+                rb.velocity = Vector2.zero;
+                rb.AddForce(Vector2.up * jumpForce);
+            }
+            else
+            {
+                isCrouched = false;
+            }
 
-        float verticalInput = Input.GetAxisRaw("Vertical");
+            Vector2 moveDirection = new Vector2(horizontalInput * speed, rb.velocity.y);
+            rb.velocity = moveDirection;
 
-        if (Input.GetAxisRaw("Vertical") < 0)
-        {
-            isCrouched = true;
-        }
+            float verticalInput = Input.GetAxisRaw("Vertical");
 
-        anim.SetFloat("speed", Mathf.Abs(horizontalInput));
-        anim.SetBool("isGrounded", isGrounded);
-        anim.SetBool("isCrouched", isCrouched);
+            if (Input.GetAxisRaw("Vertical") < 0)
+            {
+                isCrouched = true;
+            }
 
-        if (Simon.flipX && horizontalInput > 0 || !Simon.flipX && horizontalInput < 0)
-        {
-            Simon.flipX = !Simon.flipX;
+            anim.SetFloat("speed", Mathf.Abs(horizontalInput));
+            anim.SetBool("isGrounded", isGrounded);
+            anim.SetBool("isCrouched", isCrouched);
+
+
+            if (Simon.flipX && horizontalInput > 0 || !Simon.flipX && horizontalInput < 0)
+            {
+                Simon.flipX = !Simon.flipX;
+            }
         }
     }
 

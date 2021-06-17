@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8757659309584756220}
   - component: {fileID: 5121564661540809962}
   m_Layer: 6
-  m_Name: MacePickup
+  m_Name: MacePickUp
   m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -145,3 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentCollectible: 0
+  GetHealthSFX: {fileID: 0}
+  GetPowerUpSFX: {fileID: 8300000, guid: df811827cc887664fbf92d27b3598cfd, type: 3}
+  GetScoreSFX: {fileID: 0}
+  audioMixer: {fileID: 4390460555367726887, guid: 7ee0685f27d6f1344a4e0283ef63829e, type: 2}

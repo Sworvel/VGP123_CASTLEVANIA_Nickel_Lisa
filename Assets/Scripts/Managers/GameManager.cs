@@ -93,11 +93,6 @@ public class GameManager : MonoBehaviour
                 SceneManager.LoadScene("TitleScene");
             }
         }
-        if (Input.GetKeyDown(KeyCode.Backspace))
-        {
-            QuitGame();
-        }
-
         this.fixedDeltaTime = Time.fixedDeltaTime;
     }
 
@@ -142,17 +137,5 @@ public class GameManager : MonoBehaviour
     public void ReturnToMainMenu()
     {
         SceneManager.LoadScene("TitleScene");
-    }
-
-    public void IsPaused()
-    {
-        if (Time.timeScale == 1.0f)
-            Time.timeScale = 0.0f;
-    }
-
-    public void ResumeGame()
-    {
-        if (Time.timeScale == 0.0f)
-            Time.timeScale = 1.0f;
     }
 }

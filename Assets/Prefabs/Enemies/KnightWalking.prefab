@@ -165,8 +165,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a6aedb20f6ecd6439ae0fd5172b34cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TakeDaggarDamageSFX: {fileID: 8300000, guid: 8781672376a1a0749aa5df7882ea2f70, type: 3}
+  EnemyDeathSFX: {fileID: 8300000, guid: 5ea1dc0916abaea4d9710bc1d22bda0a, type: 3}
+  audioMixer: {fileID: 4390460555367726887, guid: 7ee0685f27d6f1344a4e0283ef63829e, type: 2}
   speed: 2
-  health: 8
+  Health: 0
 --- !u!1 &1082446797240765837
 GameObject:
   m_ObjectHideFlags: 0

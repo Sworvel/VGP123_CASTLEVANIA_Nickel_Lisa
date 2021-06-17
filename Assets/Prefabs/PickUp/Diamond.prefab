@@ -165,3 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentCollectible: 1
+  GetHealthSFX: {fileID: 0}
+  GetPowerUpSFX: {fileID: 0}
+  GetScoreSFX: {fileID: 8300000, guid: 659bd678bc5337648a983931faf68bc3, type: 3}
+  audioMixer: {fileID: 4390460555367726887, guid: 7ee0685f27d6f1344a4e0283ef63829e, type: 2}

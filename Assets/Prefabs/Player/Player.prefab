@@ -144,6 +144,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   damage: 0
+  WhipSFX: {fileID: 8300000, guid: 84839497075270741b41e0bf4dfa21ff, type: 3}
+  audioMixer: {fileID: 4390460555367726887, guid: 7ee0685f27d6f1344a4e0283ef63829e, type: 2}
 --- !u!114 &3791591015770276904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,6 +158,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6d032bcf2338a845b79b3d456026b38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerFireSFX: {fileID: 8300000, guid: 060ce12192073034bbe3e08d3acc92bf, type: 3}
+  audioMixer: {fileID: 4390460555367726887, guid: 7ee0685f27d6f1344a4e0283ef63829e, type: 2}
   spawnPointLeft: {fileID: 3791591015527971117}
   spawnPointRight: {fileID: 3791591016188670178}
   projectileSpeed: 10
@@ -172,18 +176,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ebc97ff2bae4dc4fa722d94333387a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 3
   jumpForce: 300
-  isGrounded: 1
+  isGrounded: 0
   isGroundLayer:
     serializedVersion: 2
     m_Bits: 8
   groundCheck: {fileID: 3791591016261910381}
   groundChekcRadius: 0
   isCrouched: 0
-  BounceForce: 0
-  score: 0
-  lives: 3
+  BounceForce: 4
+  Score: 0
+  Health: 3
 --- !u!50 &3791591015770276906
 Rigidbody2D:
   serializedVersion: 4

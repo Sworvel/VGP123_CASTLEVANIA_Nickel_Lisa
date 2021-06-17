@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(SpriteRenderer), typeof(Animator))]
 public class EnemyWalker : MonoBehaviour
@@ -12,6 +13,13 @@ public class EnemyWalker : MonoBehaviour
     BoxCollider2D playerColl;
     BoxCollider2D squishColl;
 
+    AudioSource TakeDaggarDamage;
+    AudioSource EnemyDeathAudioSource;
+
+    public AudioClip TakeDaggarDamageSFX;
+    public AudioClip EnemyDeathSFX;
+    public AudioMixerGroup audioMixer;
+
     public float speed;
     public int Health;
 
@@ -22,7 +30,6 @@ public class EnemyWalker : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         enemyColl = this.transform.GetComponent<BoxCollider2D>();
-        //playerColl = GameObject.Find("Player").GetComponent<BoxCollider2D>();
 
         if (speed <= 0)
         {
@@ -50,8 +57,10 @@ public class EnemyWalker : MonoBehaviour
             }
         }
 
-        //Physics2D.IgnoreCollision(enemyColl, playerColl);
-        // for some reason these caused a bunch of errors with the playerColl... still works without it tho
+        if (Health <= 0)
+        {
+            IsDead();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -66,33 +75,56 @@ public class EnemyWalker : MonoBehaviour
     {
         if (collision.gameObject.tag == "PlayerProjectile")
         {
-            IsDead();
+            EnemyTakeDamage();
         }
 
-        if (collision.gameObject.tag == "Player")
+        if (Health > 0 && collision.gameObject.tag == "Player")
         {
             GameManager.instance.PlayerDeath();
         }
     }
 
+    public void EnemyTakeDamage()
+    {     
+        Health--;
+        if (!TakeDaggarDamage)
+        {
+            TakeDaggarDamage = gameObject.AddComponent<AudioSource>();
+            TakeDaggarDamage.clip = TakeDaggarDamageSFX;
+            TakeDaggarDamage.outputAudioMixerGroup = audioMixer;
+            TakeDaggarDamage.loop = false;
+        }
+        TakeDaggarDamage.Play();
+    }
+
     public void IsDead()
     {
-        Health--;
-        if (Health <= 0)
+        anim.SetBool("Death", true);
+        rb.velocity = Vector2.zero;
+    }
+
+    public void DeathSound()
+    {
+        if (!EnemyDeathAudioSource)
         {
-            anim.SetBool("Death", true);
-            rb.velocity = Vector2.zero;
+            EnemyDeathAudioSource = gameObject.AddComponent<AudioSource>();
+            EnemyDeathAudioSource.clip = EnemyDeathSFX;
+            EnemyDeathAudioSource.outputAudioMixerGroup = audioMixer;
+            EnemyDeathAudioSource.loop = false;
         }
+        EnemyDeathAudioSource.Play();
     }
 
     public void IsSquished()
     {
         anim.SetBool("Squish", true);
+        Health = 0;
         rb.velocity = Vector2.zero;
     }
 
     public void FinishedDeath()
     {
         Destroy(gameObject.transform.parent.gameObject);
+        Destroy(this.gameObject);
     }
 }

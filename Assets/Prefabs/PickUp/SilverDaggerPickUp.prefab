@@ -144,3 +144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d56799024800af44a2f05fb18eb92ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentCollectible: 0
+  GetHealthSFX: {fileID: 0}
+  GetPowerUpSFX: {fileID: 8300000, guid: df811827cc887664fbf92d27b3598cfd, type: 3}
+  GetScoreSFX: {fileID: 0}
+  audioMixer: {fileID: 4390460555367726887, guid: 7ee0685f27d6f1344a4e0283ef63829e, type: 2}

@@ -57,7 +57,6 @@ public class Projectile : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemies")
         {
-            collision.gameObject.GetComponent<EnemyWalker>().IsDead();
             Destroy(this.gameObject);
         }
 
