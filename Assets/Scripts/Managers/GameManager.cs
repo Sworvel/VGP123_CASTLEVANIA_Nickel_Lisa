@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
         set { _instance = value; }
     }
 
-    public int maxHealth = 3;
+    public int maxHealth = 4;
 
     int _score = 0;
     public int score
@@ -29,17 +29,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    int _Health = 3;
+    int _Health = 4;
 
     public int Health
     {
         get { return _Health; }
         set
         {
-            if(_Health > value)
-            {
-                //respawn code goes here
-            }
             _Health = value;
 
             if (_Health > maxHealth)

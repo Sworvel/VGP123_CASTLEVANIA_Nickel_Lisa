@@ -22,7 +22,6 @@ public class CanvasManager : MonoBehaviour
     public GameObject PauseMenu;
 
     [Header("Text")]
-    public Text HealthText;
     public Text VolText;
 
     [Header("Slider")]
@@ -40,6 +39,25 @@ public class CanvasManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (SceneManager.GetActiveScene().name == "SampleScene")
+        {
+            if (!LevelMusicAudioSource)
+            {
+                LevelMusicAudioSource = gameObject.AddComponent<AudioSource>();
+                LevelMusicAudioSource.clip = LevelMusic;
+                LevelMusicAudioSource.outputAudioMixerGroup = musicAudioMixer;
+                LevelMusicAudioSource.loop = true;
+            }
+            LevelMusicAudioSource.Play();
+        }
+        if (!LevelMusicAudioSource)
+        {
+            LevelMusicAudioSource = gameObject.AddComponent<AudioSource>();
+            LevelMusicAudioSource.clip = LevelMusic;
+            LevelMusicAudioSource.outputAudioMixerGroup = musicAudioMixer;
+            LevelMusicAudioSource.loop = true;
+        }
+        LevelMusicAudioSource.Play();
         if (StartButton)
         {
             StartButton.onClick.AddListener(() => GameManager.instance.StartGame());
@@ -79,11 +97,6 @@ public class CanvasManager : MonoBehaviour
 
     private void Update()
     {
-        if (HealthText)
-        {
-            HealthText.text = GameManager.instance.Health.ToString();
-        }
-
         if (PauseMenu)
         {
             if (Input.GetKeyDown(KeyCode.P))
@@ -98,18 +111,12 @@ public class CanvasManager : MonoBehaviour
                 }
                 if (PauseMenu.activeSelf)
                 {
+                    LevelMusicAudioSource.Stop();
                     PauseMenuAudioSource.Play();
                     Time.timeScale = 0;
                 }
                 else
                 {
-                    if (!LevelMusicAudioSource)
-                    {
-                        LevelMusicAudioSource = gameObject.AddComponent<AudioSource>();
-                        LevelMusicAudioSource.clip = LevelMusic;
-                        LevelMusicAudioSource.outputAudioMixerGroup = musicAudioMixer;
-                        LevelMusicAudioSource.loop = true;
-                    }
                     Time.timeScale = 1;
                     LevelMusicAudioSource.Play();
                 }

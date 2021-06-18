@@ -19,7 +19,6 @@ public class PlayerMovement : MonoBehaviour
     public int BounceForce;
 
     public int Score = 0;
-    public int Health = 3;
 
     bool coroutineRunning = false;
 

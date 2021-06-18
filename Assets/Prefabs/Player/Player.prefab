@@ -187,7 +187,7 @@ MonoBehaviour:
   isCrouched: 0
   BounceForce: 4
   Score: 0
-  Health: 3
+  Health: 4
 --- !u!50 &3791591015770276906
 Rigidbody2D:
   serializedVersion: 4
